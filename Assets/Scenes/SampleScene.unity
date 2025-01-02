@@ -355,9 +355,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff952f5c244f394f972f3468923d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCompleteQuestion: 5
-  timeToShowCorrectAnswer: 10
+  timeToCompleteQuestion: 15
+  timeToShowCorrectAnswer: 5
   isAnsweringQuestion: 0
+  loadNextQuestion: 0
+  fillFraction: 0
 --- !u!1 &241279316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,7 +1662,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 476721345}
-  question: {fileID: 11400000, guid: 8e7c4f0d0669a104295e5be922e5dcd4, type: 2}
+  questions:
+  - {fileID: 11400000, guid: 8e7c4f0d0669a104295e5be922e5dcd4, type: 2}
+  - {fileID: 11400000, guid: 0f2334d22a3fc004b8a2807bd4604980, type: 2}
+  - {fileID: 11400000, guid: f26c32958b24c5748b7b37fd3c588307, type: 2}
+  - {fileID: 11400000, guid: e47359fe6f9feed4783bfe0c0818951f, type: 2}
+  - {fileID: 11400000, guid: 08a98dd701941934db3ffd5dfff18b54, type: 2}
   answerButtons:
   - {fileID: 831200883}
   - {fileID: 384530538}
@@ -1668,6 +1675,8 @@ MonoBehaviour:
   - {fileID: 332556551}
   defaultAnswerSprite: {fileID: 21300000, guid: 4e901158ca5022144aa9e627c965a1d0, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: b0bab101d3c7bd84b90a49e168d76f81, type: 3}
+  timerImage: {fileID: 1560255544}
+  timer: {fileID: 0}
 --- !u!224 &2090133559 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4202920095585126304, guid: 7debbe0c3d9490b4eb68e189530248ab, type: 3}

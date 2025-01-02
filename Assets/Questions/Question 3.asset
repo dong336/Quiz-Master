@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7476001d4b109447ac2866c12f4f3fd, type: 3}
   m_Name: Question 3
   m_EditorClassIdentifier: 
-  question: What is the four-character idiom that means "freely appearing and disappearing"?
+  question: What is the name of the communication technology that allows you to make
+    card payments by contacting your smartphone with your device?
   answers:
-  - "\u51FA\u6CA1\u65E0\u5E38"
-  - "\u4E95\u4E95\u6709\u6761"
-  - "\u753B\u9F99\u70B9\u775B"
-  - "\u4E00\u5E06\u98CE\u987A"
-  correctAnswerIndex: 0
+  - WIFI
+  - TAG
+  - RFC
+  - NFC
+  correctAnswerIndex: 3
